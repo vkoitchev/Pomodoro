@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center min-h-screen bg-white text-gray-800">
+  <h1 class="text-3xl font-bold mt-8">Pomodoro Timer</h1>
+  <div id="display" class="text-xl font-semibold bg-gray-100 p-4 rounded my-4 max-w-xs">Start timer: 15 min</div>
+  <label class="mb-6">
+    Work: <select id="work-minutes" class="p-2 border rounded">
+      <option value="25">25</option>
+      <option value="15">15</option>
+      <option value="5">5</option>
+    </select> minutes
+  </label>
+  <div class="mb-8 space-x-4">
+    <button id="start" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Start</button>
+    <button id="stop" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Stop</button>
+  </div>
+
+  <div id="timer-div" class="text-3xl font-mono text-blue-600"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
